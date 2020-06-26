@@ -1,10 +1,20 @@
+.container {
+   top: 7.12rem;
+   position: relative;
+   background-color: blue;
+   padding: 1rem;
+}
+
 .transparent {
-   top: 8.5rem;
+   /* top: 7.12rem; */
    background-color: rgba(238, 235, 235, 0.7);
-   height: min-content;
-   width: min-content;
-   position: fixed;
+   min-height: min-content;
+   /* max-height: 625px; */
+   min-width: min-content;
+   max-width: 77%;
+   position: absolute;
    border-radius: 10%;
+   overflow: hidden;
 }
 
 .testButton {

@@ -1,40 +1,59 @@
-// import { linkEvent, instance, Component } from "inferno";
-import React, {Component} from 'react';
+
+import React, { useState, useEffect } from 'react';
 import "./css/style.css"
 
-const div = []
+export default function BackSplash() {
 
-function addDiv(instance) {
-   const test = <h1>Test</h1>
-   instance.setState({ data: div })
-   
-   console.log(this.data.state)
-   console.log("yo")
-}
+   let [divs, setDivs] = useState([])
+   console.log(divs)
 
-class BackSplash extends Component {
-
-   render() {
-      return (
-         <div className="transparent">
-            {/* <button className="testButton" type="text" onClick={linkEvent(this, addDiv)}>Test</button> */}
-            {div}
-         </div>
-      )
+   function testDiv() {
+      console.log("test")
+      setDivs(divs += "<h1>Testing this bad boy out, yah know what I mean?</h1>")
+      console.log(divs)
    }
+   console.log(divs)
+
+   return (
+      <div className="container">
+         <div className="transparent">
+            <button className="testButton" type="text" onClick={testDiv}>Test</button>
+            {divs}
+         </div>
+      </div>
+   )
 }
+// const div = []
 
+// function addDiv(instance) {
+//    const test = <h1>Test</h1>
+//    instance.setState({ data: div })
 
-   // render() {
-   //    return (
-   //       <div className="transparent">
-   //          <button className="testButton" onClick={addDiv}>Test</button>
-   //          {this.state.divs.map(div => (
-   //             <div>Test</div>
-   //          ))}
-   //       </div>
-   //    )
-   // }
+//    console.log(this.data.state)
+//    console.log("yo")
 // }
 
-export default BackSplash;
+// class BackSplash extends Component {
+
+//    render() {
+//       return (
+//          <div className="transparent">
+//             {/* <button className="testButton" type="text" onClick={linkEvent(this, addDiv)}>Test</button> */}
+//             {div}
+//          </div>
+//       )
+//    }
+// }
+
+
+// render() {
+//    return (
+//       <div className="transparent">
+//          <button className="testButton" onClick={addDiv}>Test</button>
+//          {this.state.divs.map(div => (
+//             <div>Test</div>
+//          ))}
+//       </div>
+//    )
+// }
+// }
