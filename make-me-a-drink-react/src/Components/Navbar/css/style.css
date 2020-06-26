@@ -1,0 +1,122 @@
+.nav {
+   position: absolute;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   top: 0;
+   right: 0;
+   left: 0;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   padding-top: 0.2rem;
+   padding-right: 1rem;
+   padding-bottom: 0.2rem;
+   padding-left: 1rem;
+   background-color: rgba(77,26,26) !important;
+}
+
+.title {
+   display: inline-block;
+   line-height: inherit;
+   white-space: nowrap;
+   margin-left: 2rem;
+   color: white;
+   text-decoration: none;
+}
+
+.nav-list, .nav-item, .form {
+   list-style-type: none;
+   display: flex;
+   padding-left: .5rem;
+   padding-right: .5rem;
+   margin-left: auto !important;
+}
+
+
+.nav-item {
+   list-style-type: none;
+   margin-top: 5px;
+}
+
+.nav-item a:hover {
+   color:rgb(211, 27, 27) !important;
+}
+h4:hover {
+   color: rgb(211, 27, 27) !important;
+}
+
+.list-div {
+   margin-left: auto !important;
+}
+
+.form {
+   display: flex;
+   align-items: center;
+   flex-flow: wrap;
+}
+
+.search {
+   color: #495057 !important;
+   background-color: #fff;
+   background-clip: padding-box;
+   transition: 
+   /* line-height: px; */
+   /* font-size: 20px !important; */
+   /* font-family: 'Vollkorn', serif; */
+}
+
+.smooth {
+   border-radius: .40rem;
+   padding: .25rem .75rem;
+   background-clip: padding-box;
+   border-radius: .40rem;
+   border: 1px solid #ced4da;
+   font-size: 18px !important;
+   margin-left: .5rem;
+   margin-right: .5rem;
+}
+
+.smooth:first-child {
+   margin-left: 0;
+}
+.smooth:last-child {
+   margin-right: 0px;
+}
+
+.search-btn {
+   background-color: transparent;
+   border: 1px solid transparent;
+   border-color: #f8f9fa;
+   cursor: pointer;
+}
+
+.search-btn:hover {
+   border-color:rgb(211, 27, 27) !important;
+   color: rgb(211, 27, 27) !important;
+}
+
+#test :hover {
+   border: rgb(211, 27, 27) !important;
+   border-color:rgb(211, 27, 27) !important;
+   color: rgb(211, 27, 27) !important;
+}
+
+.lobster {
+   font-family: 'Lobster', cursive;
+   padding-top: 0.3rem !important;
+   padding-bottom: 0.3rem !important;
+   margin-right: 1rem !important;
+   font-size: 2rem !important;
+   margin-top: 0 !important;
+   margin-bottom: 0 !important;
+   font-weight: 500 !important;
+}
+
+.vollkorn {
+   font-family: 'Vollkorn', serif;
+   font-size: 20px;
+   font-weight: 700 !important;
+   color: white;
+   text-decoration: none;
+}
