@@ -1,0 +1,24 @@
+.botBar {
+   bottom: 0;
+   position: fixed;
+   width: 33%;
+   margin: 0 auto;
+   right: 0;
+   left: 0;
+   list-style-type: none;
+   
+}
+
+.popUp {
+   background-color: rgba(77,26,26) !important;
+   font-size: 0.5rem;
+   padding: 0.1rem;
+   text-align: center;
+   border-top-left-radius: 90%;
+   border-top-right-radius: 90%;
+}
+
+.popUp:hover {
+   display: block;
+   color: #ffffff;
+}

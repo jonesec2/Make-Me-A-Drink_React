@@ -1,6 +1,10 @@
 
 .parent {
-   position: relative;
+   position: absolute;
+   min-width: 100vw;
+   max-width: 100vh;
+   max-height: 100vw;
+   overflow:hidden
 }
 
 .App-link {
