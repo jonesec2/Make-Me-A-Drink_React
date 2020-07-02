@@ -1,24 +1,36 @@
 .botBar {
    bottom: 0;
    position: fixed;
-   width: 33%;
+   list-style-type: none;
+   text-align: center;
+   width: 12%;
    margin: 0 auto;
    right: 0;
    left: 0;
-   list-style-type: none;
-   
 }
 
 .popUp {
    background-color: rgba(77,26,26) !important;
-   font-size: 0.5rem;
+   /* color:  rgba(77,26,26); */
+   font-size: 1rem;
    padding: 0.1rem;
    text-align: center;
    border-top-left-radius: 90%;
    border-top-right-radius: 90%;
+   transition: ease-in-out 0.5s;
 }
 
 .popUp:hover {
    display: block;
    color: #ffffff;
+   padding: 0.4rem;
+   font-size: 1.8rem;
+   border-top-left-radius: 60%;
+   border-top-right-radius: 60%;
+   cursor: pointer;
 }
+
+
+/* .scroller :hover {
+   display: block;
+} */
