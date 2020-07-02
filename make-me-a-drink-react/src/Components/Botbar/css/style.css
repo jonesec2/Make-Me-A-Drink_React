@@ -28,8 +28,12 @@
    border-top-left-radius: 60%;
    border-top-right-radius: 60%;
    cursor: pointer;
+   box-shadow: 0 0 0.5rem 0.5rem rgba(255, 251, 220, 0.842);
 }
 
+.scroller {
+   
+}
 
 /* .scroller :hover {
    display: block;

@@ -16,7 +16,6 @@ export default function Botbar() {
 
    const scrollTop = event => {
       event.preventDefault();
-      console.log(event)
       window.scrollTo(0, 0)
    }
 
