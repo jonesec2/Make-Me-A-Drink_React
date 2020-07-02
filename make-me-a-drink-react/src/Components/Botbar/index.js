@@ -14,9 +14,15 @@ export default function Botbar() {
    //    }
    // `
 
+   const scrollTop = event => {
+      event.preventDefault();
+      console.log(event)
+      window.scrollTo(0, 0)
+   }
+
    return (
       <div className="botBar">
-         <div className="popUp">
+         <div className="popUp" onClick={scrollTop}>
             <p className="scroller">^</p>
          </div>
 
