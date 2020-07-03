@@ -19,7 +19,7 @@ export default function Navbar() {
                <li className="nav-item">
                   <label class="switch switch-left-right">
                      <input class="switch-input" type="checkbox" />
-                     <span class="switch-label" data-on="On" data-off="Off"></span>
+                     <span class="switch-label" data-on="Night" data-off="Day"></span>
                      <span class="switch-handle"></span>
                   </label>
                </li>
