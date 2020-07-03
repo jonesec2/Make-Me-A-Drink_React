@@ -5,11 +5,6 @@ import "./css/style.css";
 
 
 export default function Navbar() {
-   // const [path, setPath] = useState(window.location.pathname);
-
-   // useEffect(() => {
-   //    setPath(window.location.pathname);
-   // }, [path])
 
    //write onClick event for the "Dark Mode" button
 
@@ -22,7 +17,11 @@ export default function Navbar() {
                   <Link id="id2" className="vollkorn" to="/saved"><a>Saved Drinks</a></Link>
                </li>
                <li className="nav-item">
-                  <Link id="id3" className="vollkorn"><a>Dark Mode</a></Link>
+                  <label class="switch switch-left-right">
+                     <input class="switch-input" type="checkbox" />
+                     <span class="switch-label" data-on="On" data-off="Off"></span>
+                     <span class="switch-handle"></span>
+                  </label>
                </li>
                <form class="form">
                   <input className="vollkorn smooth search" type="search" placeholder="Drink Search"
