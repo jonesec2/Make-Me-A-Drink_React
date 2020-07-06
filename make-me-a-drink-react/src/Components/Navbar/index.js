@@ -9,16 +9,21 @@ export default function Navbar() {
    //write onClick event for the "Dark Mode" button
 
 
-   let [count, setCount] = useState()
+   let [count, setCount] = useState(0)
    let [background, setBackground] = useState()
 
    
 
    function counter() {
-      if (count <= 1) {
+      console.log(count)
+      if (count === 1) {
          setCount(count += 1)
+         console.log("count classic")
+         // localStorage.setItem('count', count)
       } else {
          count = 1
+         console.log("count noir")
+         // localStorage.setItem('count', count)
       }
       determineBackground()
    }
@@ -28,7 +33,8 @@ export default function Navbar() {
       if (count % 2 === 0) {
          console.log('yes')
          setBackground("noir")
-         console.log(background);
+         console.log(background)
+         // localStorage.setItem('background', background)
       } else {
          console.log('no')
          setBackground('classic')
