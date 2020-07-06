@@ -1,5 +1,5 @@
 // import {useState, useEffect} from "inferno";
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import "./css/style.css";
 
@@ -7,6 +7,42 @@ import "./css/style.css";
 export default function Navbar() {
 
    //write onClick event for the "Dark Mode" button
+
+
+   let [count, setCount] = useState()
+   let [background, setBackground] = useState()
+
+   
+
+   function counter() {
+      if (count <= 1) {
+         setCount(count += 1)
+      } else {
+         count = 1
+      }
+      determineBackground()
+   }
+
+   function determineBackground() {
+      
+      if (count % 2 === 0) {
+         console.log('yes')
+         setBackground("noir")
+         console.log(background);
+      } else {
+         console.log('no')
+         setBackground('classic')
+         console.log(background)
+      }
+   }
+
+   function buttonToggle(event) {
+      // event.preventDefault();
+      console.log("Test")
+      console.log(event.target.dataset)
+      console.log(event.target.getAttribute('data-on'))
+
+   }
 
    return (
       <nav className="nav test">
@@ -19,7 +55,7 @@ export default function Navbar() {
                <li className="nav-item">
                   <label class="switch switch-left-right">
                      <input class="switch-input" type="checkbox" />
-                     <span class="switch-label" data-on="Night" data-off="Day"></span>
+                     <span onClick={counter} class="switch-label" data-on="Noir" data-off="Classic"></span>
                      <span class="switch-handle"></span>
                   </label>
                </li>

@@ -6,8 +6,8 @@ import "./css/style.css"
 export default function Saved() {
 
    return (
-      <div className="App">
-      <header className="App-header">
+      <div className="page">
+      <header className="drinkHeader">
          <SavedDrinks/>
       </header>
    </div>

@@ -1,12 +1,8 @@
-.App {
+.page {
    text-align: center;
-   background-image:  url("../../img/ingoodspirits-8.jpg");
- 
-   background-repeat: no-repeat;
-   background-size: cover;
 }
 
-.App-header {
+.drinkHeader {
    min-height: 100vh;
    display: inline-block;
    flex-direction: column;

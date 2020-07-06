@@ -7,8 +7,8 @@ import "./css/style.css"
 export default function Drink() {
 
    return (
-      <div className="App">
-         <header className="App-header">
+      <div className="page">
+         <header className="drinkHeader">
             <BackSplash>
                <SearchDrink/>
             </BackSplash>
