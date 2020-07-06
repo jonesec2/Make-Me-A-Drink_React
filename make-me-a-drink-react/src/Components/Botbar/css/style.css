@@ -1,9 +1,9 @@
 .botBar {
-   bottom: -25px;
+   bottom: -5px;
    position: fixed;
    list-style-type: none;
    text-align: center;
-   width: 8%;
+   width: 4%;
    margin: 0 auto;
    right: 0;
    left: 0;
@@ -15,20 +15,26 @@
    font-size: 1.2rem;
    padding: 0.1rem;
    text-align: center;
-   border-top-left-radius: 90%;
-   border-top-right-radius: 90%;
-   transition: ease-in-out 0.5s;
+   border-top-left-radius: 6%;
+   border-top-right-radius: 6%;
+   transition: ease-in-out 0.3s;
 }
 
 .popUp:hover {
    display: block;
    color: #ffffff;
-   padding: 0.1rem;
-   font-size: 1.5rem;
-   border-top-left-radius: 60%;
-   border-top-right-radius: 60%;
+   padding: 0.2rem;
+   font-size: 1.4rem;
+   /* border-top-left-radius: 0%;
+   border-top-right-radius: 60%; */
    cursor: pointer;
-   box-shadow: 0 0 0.5rem 0.5rem rgba(255, 251, 220, 0.842);
+   box-shadow: 0 0 0.2rem 0.2rem rgba(255, 251, 220, 0.5);
+}
+
+.popUp:active {
+   padding: 0.2rem;
+   font-size: 1.3rem;
+   transition: ease 0.1s;
 }
 
 .scroller {
