@@ -9,37 +9,40 @@ export default function Navbar() {
    //write onClick event for the "Dark Mode" button
 
 
-   let [count, setCount] = useState(0)
-   let [background, setBackground] = useState()
+   let [count, setCount] = useState(1)
+   let [background, setBackground] = useState('noir')
 
    
 
    function counter() {
       console.log(count)
       if (count === 1) {
-         setCount(count += 1)
-         console.log("count classic")
-         // localStorage.setItem('count', count)
-      } else {
-         count = 1
+         setCount(2)
          console.log("count noir")
-         // localStorage.setItem('count', count)
-      }
+      } else {
+         setCount(1)
+         console.log("count classic")
+      } 
       determineBackground()
    }
 
    function determineBackground() {
       
       if (count % 2 === 0) {
-         console.log('yes')
+         console.log(2)
          setBackground("noir")
          console.log(background)
-         // localStorage.setItem('background', background)
       } else {
-         console.log('no')
+         console.log(1)
          setBackground('classic')
          console.log(background)
       }
+      setStorage()
+   }
+
+   function setStorage() {
+      localStorage.setItem('count', count)
+      localStorage.setItem('background', background)
    }
 
    function buttonToggle(event) {
@@ -61,7 +64,7 @@ export default function Navbar() {
                <li className="nav-item">
                   <label class="switch switch-left-right">
                      <input class="switch-input" type="checkbox" />
-                     <span onClick={counter} class="switch-label" data-on="Noir" data-off="Classic"></span>
+                     <button onClick={counter} class="switch-label" data-on="Noir" data-off="Classic"></button>
                      <span class="switch-handle"></span>
                   </label>
                </li>
