@@ -9,25 +9,28 @@ import './App.css';
 
 export default function App() {
 
-   let [background, setBackground] = useState()
+   let [background, setBackground] = useState(localStorage.getItem('background'))
 
    function changeBackground () {
-      console.log("test")
+      console.log(background)
+
    }
+   changeBackground()
    // const backgroundChange = {
    //    minus: "./img/ingoodspirits-8.jpg"
    //    plus: "./img/ingoodspirits-10.jpg"
    // }
 
-   // toggleImage = () => {
-   //    console.log(backgroundChange)
-   // }
+
+   // add a function/props? that is expecting something from the Navbar
+   // See class example or books homework(?) for example
 
    return (
       <Router>
          <div className="parent">
             <div className="App">
                <header className="App-header">
+                  
                   <Navbar />
                   <Switch>
                      <Route exact path={["/", "/drink"]}>

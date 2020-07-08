@@ -5,41 +5,33 @@ import "./css/style.css";
 
 
 export default function Navbar() {
-
-   //write onClick event for the "Dark Mode" button
-
-
+  
+   //////////////////////////////
+   // 1. Write a function that checks the local storage on a users first visit
+   // and if none exists set default of "classic". Else {rest of logic}
+   //
+   // 2.Add function that if Noir is chosen, page will load with attr(off) selected
+   /////////////////////////////
+   
    let [count, setCount] = useState(1)
    let [background, setBackground] = useState('noir')
 
    
-
+   // sets a counter for the background slider
    function counter() {
       console.log(count)
       if (count === 1) {
          setCount(2)
-         console.log("count noir")
+         setBackground('classic')
+         
       } else {
          setCount(1)
-         console.log("count classic")
+         setBackground('noir')
       } 
-      determineBackground()
-   }
-
-   function determineBackground() {
-      
-      if (count % 2 === 0) {
-         console.log(2)
-         setBackground("noir")
-         console.log(background)
-      } else {
-         console.log(1)
-         setBackground('classic')
-         console.log(background)
-      }
       setStorage()
    }
 
+   // Sets the count / background to storage to save the preference
    function setStorage() {
       localStorage.setItem('count', count)
       localStorage.setItem('background', background)
