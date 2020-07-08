@@ -63,8 +63,8 @@ export default function Navbar() {
                </li>
                <li className="nav-item">
                   <label class="switch switch-left-right">
-                     <input class="switch-input" type="checkbox" />
-                     <button onClick={counter} class="switch-label" data-on="Noir" data-off="Classic"></button>
+                     <input onClick={counter} class="switch-input" type="checkbox" />
+                     <span  class="switch-label" data-on="Noir" data-off="Classic"></span>
                      <span class="switch-handle"></span>
                   </label>
                </li>
