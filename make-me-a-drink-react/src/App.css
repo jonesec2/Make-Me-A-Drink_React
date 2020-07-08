@@ -4,13 +4,17 @@
    min-width: 100vw;
    max-width: 100vh;
    max-height: 100vw;
-   overflow:hidden
+   overflow: visible;
 }
 
+/* Issue is that the backsplash is increasing the height, 
+and to keep it absolute or whatever the image is stretching to match
+the new height. I think solution is to move the backsplash
+to it's own "position" or whatever. The goal would be that the backsplash can 
+be scrollable, but the main page is not.*/
 .App {
    text-align: center;
    background-image:  url("./img/ingoodspirits-8.jpg");
- 
    background-repeat: no-repeat;
    background-size: cover;
 }
