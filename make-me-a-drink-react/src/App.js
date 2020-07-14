@@ -32,11 +32,6 @@ export default function App() {
    function check() {
       console.log(image)
    }
-   // const backgroundChange = {
-   //    minus: "./img/ingoodspirits-8.jpg"
-   //    plus: "./img/ingoodspirits-10.jpg"
-   // }
-
 
    // add a function/props? that is expecting something from the Navbar
    // See class example or books homework(?) for example
