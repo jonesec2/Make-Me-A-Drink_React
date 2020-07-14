@@ -4,6 +4,7 @@
    list-style-type: none;
    text-align: center;
    width: 8%;
+   min-width: 46px;
    margin: 0 auto;
    right: 0;
    left: 0;

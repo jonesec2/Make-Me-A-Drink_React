@@ -1,5 +1,5 @@
 // import {useState, useEffect} from "inferno";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import "./css/style.css";
 
@@ -15,6 +15,17 @@ export default function Navbar() {
    
    let [count, setCount] = useState(1)
    let [background, setBackground] = useState('noir')
+
+   useEffect(() => {
+      let test = localStorage.getItem('count')
+      console.log(test)
+      if (test === null) {
+         localStorage.setItem('count', '2')
+         localStorage.setItem('background', 'classic')
+      } else {
+         return
+      }
+   }, []);
 
    
    // sets a counter for the background slider
