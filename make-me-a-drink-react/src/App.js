@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, ReactDOM, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import Logo from './logo';
 import Navbar from "./Components/Navbar";
@@ -9,13 +9,29 @@ import './App.css';
 
 export default function App() {
 
-   let [background, setBackground] = useState(localStorage.getItem('background'))
+   let [image, setImage] = useState("./img/ingoodspirits-10.jpg")
 
-   function changeBackground () {
-      console.log(background)
+   useEffect(() => {
+      let test = localStorage.getItem('background')
+      console.log(test)
+      if (test === null) {
+         setImage("./img/ingoodspirits-8.jpg")
 
+      } else if ( test === 'noir') {
+         console.log('image noir')
+         setImage("./img/ingoodspirits-10.jpg")
+
+      } else {
+         console.log('image classic')
+         setImage("./img/ingoodspirits-8.jpg")
+      }
+      check()
+   }, []);
+ 
+
+   function check() {
+      console.log(image)
    }
-   changeBackground()
    // const backgroundChange = {
    //    minus: "./img/ingoodspirits-8.jpg"
    //    plus: "./img/ingoodspirits-10.jpg"
@@ -28,9 +44,8 @@ export default function App() {
    return (
       <Router>
          <div className="parent">
-            <div className="App">
+            <div className="App" style={{backgroundImage: `url("${image}")`}}>
                <header className="App-header">
-                  
                   <Navbar />
                   <Switch>
                      <Route exact path={["/", "/drink"]}>

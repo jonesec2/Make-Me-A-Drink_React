@@ -24,7 +24,7 @@ export default function Navbar() {
          localStorage.setItem('background', 'classic')
       } else {
          return
-      }
+      }      
    }, []);
 
    

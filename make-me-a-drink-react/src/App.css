@@ -14,7 +14,6 @@ to it's own "position" or whatever. The goal would be that the backsplash can
 be scrollable, but the main page is not.*/
 .App {
    text-align: center;
-   background-image:  url("./img/ingoodspirits-8.jpg");
    background-repeat: no-repeat;
    background-size: cover;
 }
