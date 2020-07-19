@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import "./css/style.css";
 
 
-export default function Navbar() {
+export default function Navbar({onButtonClick}) {
   
    //////////////////////////////
    // 1. Write a function that checks the local storage on a users first visit
@@ -13,7 +13,7 @@ export default function Navbar() {
    // 2.Add function that if Noir is chosen, page will load with attr(off) selected
    /////////////////////////////
    
-   let [count, setCount] = useState(1)
+   let [count, setCount] = useState(10)
    let [background, setBackground] = useState('noir')
 
    useEffect(() => {
@@ -30,13 +30,14 @@ export default function Navbar() {
    
    // sets a counter for the background slider
    function counter() {
-      console.log(count)
-      if (count === 1) {
-         setCount(2)
+      console.log(count + " navbar")
+      onButtonClick()
+      if (count === 10) {
+         setCount(8)
          setBackground('classic')
          
       } else {
-         setCount(1)
+         setCount(10)
          setBackground('noir')
       } 
       setStorage()
@@ -65,13 +66,13 @@ export default function Navbar() {
                   <Link id="id2" className="vollkorn" to="/saved"><a>Saved Drinks</a></Link>
                </li>
                <li className="nav-item">
-                  <label class="switch switch-left-right">
-                     <input onClick={counter} class="switch-input" type="checkbox" />
-                     <span  class="switch-label" data-on="Noir" data-off="Classic"></span>
-                     <span class="switch-handle"></span>
+                  <label className="switch switch-left-right">
+                     <input onClick={counter}  className="switch-input" type="checkbox"></input>
+                     <span className="switch-label" data-on="Noir" data-off="Classic"></span>
+                     <span className="switch-handle"></span>
                   </label>
                </li>
-               <form class="form">
+               <form className="form">
                   <input className="vollkorn smooth search" type="search" placeholder="Drink Search"
                      aria-label="Mix Drink Search" />
                   <button id="test" className="vollkorn search-btn smooth" type="submit">Search</button>

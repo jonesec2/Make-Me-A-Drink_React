@@ -7,6 +7,11 @@
    overflow: visible;
 }
 
+.light {
+   padding-top: 200px;
+   background-color: green;
+}
+
 /* Issue is that the backsplash is increasing the height, 
 and to keep it absolute or whatever the image is stretching to match
 the new height. I think solution is to move the backsplash
