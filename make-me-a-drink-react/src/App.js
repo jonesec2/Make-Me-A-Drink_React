@@ -21,12 +21,12 @@ export default function App() {
    function onButtonClick() {
       console.log("i was clicked")
       if (image === "./img/ingoodspirits-8.jpg") {
-         console.log(1 + " background")
+         console.log("switching to noir")
          setImage("./img/ingoodspirits-10.jpg")
-         
+
       } else if ("./img/ingoodspirits-10.jpg") {
          setImage("./img/ingoodspirits-8.jpg")
-         console.log(2)
+         console.log("switching to classic")
       }
       else {
          return

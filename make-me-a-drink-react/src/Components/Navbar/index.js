@@ -20,7 +20,7 @@ export default function Navbar({onButtonClick}) {
       let test = localStorage.getItem('count')
       console.log(test)
       if (test === null) {
-         localStorage.setItem('count', '2')
+         localStorage.setItem('count', '8')
          localStorage.setItem('background', 'classic')
       } else {
          return
@@ -34,10 +34,12 @@ export default function Navbar({onButtonClick}) {
       onButtonClick()
       if (count === 10) {
          setCount(8)
+         console.log("noir click")
          setBackground('classic')
          
       } else {
          setCount(10)
+         console.log("classic click")
          setBackground('noir')
       } 
       setStorage()
@@ -49,13 +51,13 @@ export default function Navbar({onButtonClick}) {
       localStorage.setItem('background', background)
    }
 
-   function buttonToggle(event) {
-      // event.preventDefault();
-      console.log("Test")
-      console.log(event.target.dataset)
-      console.log(event.target.getAttribute('data-on'))
+   // function buttonToggle(event) {
+   //    // event.preventDefault();
+   //    console.log("Test")
+   //    console.log(event.target.dataset)
+   //    console.log(event.target.getAttribute('data-on'))
 
-   }
+   // }
 
    return (
       <nav className="nav test">
