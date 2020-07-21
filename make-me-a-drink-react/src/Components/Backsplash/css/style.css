@@ -1,20 +1,22 @@
 .container {
    top: 7.12rem;
    position: relative;
-   background-color: blue;
+   /* background-color: blue; */
    padding: 1rem;
+   width: 70rem;
+   /* height: 70rem;
+   max-height: 70rem; */
+
 }
 
 .transparent {
    /* top: 7.12rem; */
    background-color: rgba(238, 235, 235, 0.7);
-   min-height: min-content;
+   min-height: 70%;
    /* max-height: 625px; */
-   min-width: min-content;
-   max-width: 77%;
    position: relative;
    border-radius: 10%;
-   overflow: hidden;
+   overflow: auto;
 }
 
 .testButton {

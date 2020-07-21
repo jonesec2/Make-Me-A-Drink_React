@@ -5,6 +5,8 @@
    max-width: 100vh;
    max-height: 100vw;
    overflow: visible;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .light {

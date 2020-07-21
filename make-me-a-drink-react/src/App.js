@@ -34,38 +34,13 @@ export default function App() {
    }
 
 
-   // useEffect(() => {
-   //    let test = localStorage.getItem('background')
-   //    console.log(test)
-   //    if (test === null) {
-   //       setImage("./img/ingoodspirits-8.jpg")
-
-   //    } else if ( test === 'noir') {
-   //       console.log('image noir')
-   //       setImage("./img/ingoodspirits-10.jpg")
-
-   //    } else {
-   //       console.log('image classic')
-   //       setImage("./img/ingoodspirits-8.jpg")
-   //    }
-   //    check()
-   // }, []);
- 
-
-   // function check() {
-   //    console.log(image)
-   // }
-
    // add a function/props? that is expecting something from the Navbar
    // See class example or books homework(?) for example
 
    return (
       <Router>
-         <div className="parent">
-            {/* <div className="App" style={{backgroundImage: `url("${image2}"), url("${image}")`}}> */}
-            <div className="App" style={{backgroundImage: `url(${image})`}}>
-            {/* <input ref={inputEl} class='light' name="" type="button" value="Yeet" /> */}
-            {/* <button onClick={onButtonClick}>Focus the input</button> */}
+         <div className="parent" style={{backgroundImage: `url(${image})`}}>
+            <div className="App">
                <header className="App-header">
                   <Navbar 
                      onButtonClick={onButtonClick}
