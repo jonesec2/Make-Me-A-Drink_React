@@ -7,6 +7,7 @@
    overflow: visible;
    background-repeat: no-repeat;
    background-size: cover;
+   text-align: center;
 }
 
 .light {
@@ -19,11 +20,11 @@ and to keep it absolute or whatever the image is stretching to match
 the new height. I think solution is to move the backsplash
 to it's own "position" or whatever. The goal would be that the backsplash can 
 be scrollable, but the main page is not.*/
-.App {
+/* .App {
    text-align: center;
    background-repeat: no-repeat;
    background-size: cover;
-}
+} */
 
 .App-header {
    min-height: 100vh;

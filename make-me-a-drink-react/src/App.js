@@ -33,7 +33,6 @@ export default function App() {
       }
    }
 
-
    // add a function/props? that is expecting something from the Navbar
    // See class example or books homework(?) for example
 

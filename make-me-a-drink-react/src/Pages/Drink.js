@@ -7,12 +7,10 @@ import "./css/style.css"
 export default function Drink() {
 
    return (
-      <div className="page">
-         <header className="drinkHeader">
+         <div className="drinkHeader">
             <BackSplash>
                <SearchDrink/>
             </BackSplash>
-         </header>
-      </div>
+         </div>
    )
 }
